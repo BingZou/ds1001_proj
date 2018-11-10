@@ -11,7 +11,7 @@ Columns in this table:
 ['address', 'attributes', 'categories', 'city', 'hours', 'is_open', 'latitude', 'longitude', 'name', 'neighborhood', 'postal_code', 'review_count', 'stars', 'state', 'postal_prefix']
 
 ## tor_reviews.p:
-subset of raw reviews for restaurants in our universe, collected by iterating through all 6mm reviews and pulling out the 0.5mm reviews that are relevant to our restaurants.
+subset of raw reviews for restaurants in our universe, collected by iterating through all 6mm reviews and pulling out the 0.4mm reviews that are relevant to our restaurants.
 
 The files is on **Google Drive**
 
