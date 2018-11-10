@@ -1,4 +1,4 @@
-## Universe Results
+## Feature Extraction Results
 
 This folder includes all of the results of pre-processing the universe, this document contains information on how these results are arrived.
 
