@@ -1,0 +1,11 @@
+## Universe Results
+
+This folder includes all of the results of pre-processing the universe, this document contains information on how these results are arrived.
+
+## rest_univ.p:
+This is the universe of 13760 restaurants in Toronto.
+- Filtered yelp dataset by region and long-lat that matches GTA cities: Toronto, Mississagua, North York, Yorkdale, Etobicoke, Scarborough and any misspelt names by fuzzy string match. long-lat was restricted to be between the 1st and 99th percentile of the initial list to get rid of mislabeled restaurants from outside city bounds
+- Filtered dataset by business tag: using common restaurant related tags: 'food', 'restaurant', 'bar', 'soup', 'sushi', 'seafood', 'cafe', 'diner', 'steak', 'burger'. Businesses without these tags were excluded since they're not restaurants
+
+Columns in this table:
+['address', 'attributes', 'categories', 'city', 'hours', 'is_open', 'latitude', 'longitude', 'name', 'neighborhood', 'postal_code', 'review_count', 'stars', 'state', 'postal_prefix']
