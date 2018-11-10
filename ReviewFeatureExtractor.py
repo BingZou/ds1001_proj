@@ -69,4 +69,9 @@ class ExtractBoW(ReviewFeatureExtractor):
                         cur_id = self.token2id[token]
                         cur_vec += self.loaded_embeddings[cur_id]
                         cur_vec_count += 1
-        return cur_vec / cur_vec_count
+
+        if cur_vec_count > 0:
+            return cur_vec / cur_vec_count
+        else:
+            return np.zeros(self.loaded_embeddings.shape[1])
+
