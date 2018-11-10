@@ -4,6 +4,7 @@ base class for extracting review features, enforces methods
 from abc import ABC, abstractmethod
 import io
 import numpy as np
+import nltk
 
 
 class ReviewFeatureExtractor(ABC):
@@ -18,20 +19,16 @@ class ReviewFeatureExtractor(ABC):
 
 class ExtractBoW(ReviewFeatureExtractor):
     WORD_TYPE_ALL = 'all'
-    WORD_TYPE_NOUN = 'noun'
-    WORD_TYPE_ADJ = 'adj'
-    WORD_TYPE_VERB = 'verb'
+    WORD_TYPE_NOUN = 'N'
+    WORD_TYPE_ADJ = 'J'
+    WORD_TYPE_VERB = 'V'
     UNK_IDX = 0
     UNK_TOKEN = '<unk>'
 
     """ extracts the bag of words vector from each review and averages the vectors"""
-    def __init__(self, voc_size, word_type=None):
+    def __init__(self, voc_size):
         super().__init__()
         self.voc_size = voc_size
-        if word_type:
-            self.word_type = word_type
-        else:
-            self.word_type = self.WORD_TYPE_ALL
 
         # embeddings:
         self.token2id = None
@@ -59,5 +56,17 @@ class ExtractBoW(ReviewFeatureExtractor):
         self.id2token = id2token
         self.loaded_embeddings = loaded_embeddings
 
-    def extract(self, reviewset):
-        pass
+    def extract(self, review_text_set, word_type=WORD_TYPE_ALL):
+        """ given a list of raw review texts, extract the relevant type of average word vector """
+
+        assert self.loaded_embeddings is not None, "No embeddings found, cannot extract"
+        cur_vec = np.zeros(self.loaded_embeddings.shape[1])
+        cur_vec_count = 0
+        for t in review_text_set:
+            for token, tag in nltk.pos_tag(nltk.word_tokenize(t)):
+                if word_type == self.WORD_TYPE_ALL or tag[0] == word_type:
+                    if token in self.token2id:
+                        cur_id = self.token2id[token]
+                        cur_vec += self.loaded_embeddings[cur_id]
+                        cur_vec_count += 1
+        return cur_vec / cur_vec_count
