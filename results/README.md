@@ -19,3 +19,13 @@ The files is on **Google Drive**
 subset of users in a dataframe with users who have only reviewed a restaurant in toronto
 
 The file is on **Google Drive**
+
+## bus_review_extracts.p:
+This contains all of the extracted word vector and review counts / avg stars of each business in our universe
+
+The file is on **Google Drive**
+
+## user_review_extracts.p:
+This contains all of the extracted word vector and review counts / avg stars of each user in our universe
+
+The file is on **Google Drive**
