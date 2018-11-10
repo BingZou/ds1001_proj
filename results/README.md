@@ -14,3 +14,8 @@ Columns in this table:
 subset of raw reviews for restaurants in our universe, collected by iterating through all 6mm reviews and pulling out the 0.5mm reviews that are relevant to our restaurants.
 
 The files is on **Google Drive**
+
+## tor_users.p:
+subset of users in a dataframe with users who have only reviewed a restaurant in toronto
+
+The file is on **Google Drive**
