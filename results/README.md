@@ -22,10 +22,18 @@ The file is on **Google Drive**
 
 ## bus_review_extracts.p:
 This contains all of the extracted word vector and review counts / avg stars of each business in our universe
+- vec_all = avg vector of all words in all of the reviews of each person
+- vec_j = avg vector of all the adjectives
+- vec_n = avg vector of all the nouns
+- vec_v = avg vector of all the verbs
 
 The file is on **Google Drive**
 
 ## user_review_extracts.p:
 This contains all of the extracted word vector and review counts / avg stars of each user in our universe
+- vec_all = avg vector of all words in all of the reviews of each person
+- vec_j = avg vector of all the adjectives
+- vec_n = avg vector of all the nouns
+- vec_v = avg vector of all the verbs
 
 The file is on **Google Drive**
