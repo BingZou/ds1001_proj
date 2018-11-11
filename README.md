@@ -7,3 +7,4 @@
   - this dataset was also transformed into a csv uploaded in /data/
 
 - Pretrained Word Vectors: https://fasttext.cc/docs/en/english-vectors.html
+- Compound sentiment score: Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
