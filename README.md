@@ -7,3 +7,10 @@
   - this dataset was also transformed into a csv uploaded in /data/
 
 - Pretrained Word Vectors: https://fasttext.cc/docs/en/english-vectors.html
+
+
+## Project Steps
+1. wrangling
+    - includes all data collection and feature extraction steps
+2. modeling
+    - includes various models done on the post wrangled data
