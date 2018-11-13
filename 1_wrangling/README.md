@@ -26,7 +26,7 @@ After step 3, we have 93,075 users, stored in **tor_users.p** available on googl
 **Step 4**: joining to dinesafe universe
 - using the address and the business name in the restaurant universe, we use fuzzy string matching to join to the public dataset on restaurant health scores from Dinesafe. The approximate match rate was 50%
 
-After step 4, 5040 of the restuaruants in our universe was mapped to the health dataset. The mapping file is stored in **mapped_dinesafe.p** available on google drive 
+After step 4, 5184 of the restuaruants in our universe was mapped to the health dataset. The mapping file is stored in **mapped_dinesafe.p** available on google drive 
 
 
 ## Feature Extraction
