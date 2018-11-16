@@ -58,7 +58,6 @@ class ExtractBoW(ReviewFeatureExtractor):
 
     def extract(self, review_text_set, word_type=WORD_TYPE_ALL):
         """ given a list of raw review texts, extract the relevant type of average word vector """
-
         assert self.loaded_embeddings is not None, "No embeddings found, cannot extract"
         cur_vec = np.zeros(self.loaded_embeddings.shape[1])
 
