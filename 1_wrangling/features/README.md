@@ -17,3 +17,17 @@ For each of the vector types, a cosine similarity measure is taken between the b
 - cos_sim_noun: cos similarity between vectors of nouns
 - cos_sim_adj: cos similarity between vectors of adjectives
 - cos_sim_verb: cos similarity between vectors of verbs
+
+## dinesafe.p
+For each business, when mapped to a dinesafe restaurant, the health categorizations are pulled into this file
+
+Inspection Result Dummy Columns:
+- dinesafe_rev_closed - the restaurant was closed as a result of failing inspection
+- dinesafe_rev_condpass - the restaurant received a conditional pass, needs to work on some issues
+- dinesafe_rev_pass - the restaurant passed
+
+Issue Severity Columns:
+- dinesafe_status_cruicial - the issues were critical
+- dinesafe_status_minor - the issues were minor
+- dinesafe_status_na - this field was not applicable
+- dinesafe_status_significant - the issues were significant
