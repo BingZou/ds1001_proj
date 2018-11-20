@@ -31,3 +31,30 @@ Issue Severity Columns:
 - dinesafe_status_minor - the issues were minor
 - dinesafe_status_na - this field was not applicable
 - dinesafe_status_significant - the issues were significant
+
+## bus_rev_res_offset_hu.p
+All values are based on data before current day.   
+- count_review - total number of reviews
+- avg_stars - average stars
+- count_funny - total number of reviews marked as funny
+- count_cool - total number of reviews marked as cool
+- count_useful - total number of reviews marked as useful
+- avg_sent_score_compound - average sentiment score using compound method
+- avg_sent_score_net - average sentiment score ((# positive words - # negative words) / # of words)
+- avg_review_length - average review length
+- avg_punc_count - average number of punctuations (exclude .,)
+- avg_word_len - average word length
+
+## user_rev_res_offset_hu.p
+
+- count_review - total number of reviews
+- avg_stars - average stars
+- count_funny - total number of reviews marked as funny
+- count_cool - total number of reviews marked as cool
+- count_useful - total number of reviews marked as useful
+- avg_sent_score_compound - average sentiment score using compound method
+- avg_sent_score_net - average sentiment score ((# positive words - # negative words) / # of words)
+- avg_review_length - average review length
+- avg_punc_count - average number of punctuations (exclude .,)
+- avg_word_len - average word length
+
