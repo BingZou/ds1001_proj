@@ -37,22 +37,3 @@ This contains all of the extracted word vector and review counts / avg stars of 
 - vec_v = avg vector of all the verbs
 
 The file is on **Google Drive**
-
-## tor_attributes_features.p:
-This contains all of attributes features in our universe
-- Convert all features to numerical
-- Alcohol column 'none': 0, 'full_bar': 1, 'beer_and_wine': 2
-- RestaurantsAttire 'casual': 1, 'dressy': 2, 'formal': 3
-- Replace Boolean to 1 and 0
-
-The file is on **Google Drive**
-
-## tor_users_features.p:
-This contains all of users features in our universe
-- Convert all features to numerical
-- replace elite column with number of years having elite status
-- replace friends column with number of friends
-- drop name column
-- replace yelping_since with membership time (days)
-
-The file is on **Google Drive**
