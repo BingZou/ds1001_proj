@@ -76,3 +76,9 @@ This contains all of users features in our universe
 - replace yelping_since with membership time (days)
 
 The file is on **Google Drive**
+
+## join.p:
+
+- Joins all of the above pickles except wip_vec_reviews.p. 
+- Sets review_id as index
+- Keeps nulls for now
